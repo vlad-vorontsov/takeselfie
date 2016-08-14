@@ -1,11 +1,22 @@
 .webcam-wrapper {
-  max-width: 1000px;
+  max-width: 600px;
   margin: 30px auto;
   padding: 20px;
   background-color: #efefef;
 
   .webcam {
+    position: relative;
     width: 100%;
+
+    &:hover {
+      .take-photo-btn {
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 
   .camera {
@@ -16,7 +27,63 @@
     display: none;
   }
 
-  .tack-photo-btn {
-    cursor: pointer;
+  .take-photo-btn {
+    opacity: 0;
+  }
+}
+
+.action-btn {
+  bottom: 10px;
+  cursor: pointer;
+  left: 5px;
+  position: absolute;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #111;
+  text-decoration: none;
+  padding: 15px;
+  line-height: 0;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font: normal 24px/1.5 'Open Sans', sans-serif;
+  color: #2c3e50;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.photo-gallery {
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .photo {
+    float: left;
+    position: relative;
+    width: 25%;
+
+    &:hover {
+      .delete-photo {
+        opacity: 0.7;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .delete-photo {
+    opacity: 0;
   }
 }
