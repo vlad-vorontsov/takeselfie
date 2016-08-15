@@ -1,0 +1,20 @@
+{
+  "name": "takeselfie",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Vladyslav Vorontsov <wr-vlad@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/vlad-vorontsov/takeselfie",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0"
+  }
+}
